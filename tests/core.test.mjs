@@ -4,13 +4,14 @@ import { analyzeItems, renderMarkdownReport } from '../src/core.mjs';
 
 test('valid sample passes required field checks', () => {
   const report = analyzeItems({ items: [{
-  "id": "release-1",
-  "title": "出力・リリース確認フロー サンプル 1",
+  "id": "release-output-check-flow-1",
+  "title": "リリース成果物確認フロー サンプル1",
+  "status": "ready",
   "name": "release-output-check-flow",
-  "version": "0.1.0",
-  "artifactPath": "dist/sample-artifact.zip",
-  "releaseNotes": "docs/release-notes.md",
-  "testEvidence": "dist/test-report.txt"
+  "version": "0.2.0",
+  "artifactPath": "dist/product.zip",
+  "releaseNotes": "docs/release-checklist.md",
+  "testEvidence": "docs/manual-test.md"
 }] });
   assert.equal(report.summary.result, 'passed');
   assert.equal(report.summary.errors, 0);
@@ -18,12 +19,13 @@ test('valid sample passes required field checks', () => {
 
 test('missing required field is reported', () => {
   const report = analyzeItems({ items: [{
-  "id": "release-missing-required",
+  "id": "release-output-check-flow-missing-required",
   "title": "必須項目不足サンプル",
-  "version": "0.1.0",
-  "artifactPath": "dist/sample-artifact.zip",
-  "releaseNotes": "docs/release-notes.md",
-  "testEvidence": "dist/test-report.txt"
+  "status": "ready",
+  "version": "0.2.0",
+  "artifactPath": "dist/product.zip",
+  "releaseNotes": "docs/release-checklist.md",
+  "testEvidence": "docs/manual-test.md"
 }] });
   assert.equal(report.summary.result, 'failed');
   assert.equal(report.summary.errors, 1);

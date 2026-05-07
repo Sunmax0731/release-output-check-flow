@@ -1,7 +1,7 @@
 export const productConfig = {
   "repo": "release-output-check-flow",
-  "titleJa": "出力・リリース確認フロー",
-  "summary": "リリース成果物と検証証跡の公開前判断",
+  "titleJa": "リリース成果物確認フロー",
+  "summary": "リリース成果物、リリースノート、検証証跡、公開前チェックをひとつの確認レポートにまとめる。",
   "requiredFields": [
     "name",
     "version",

@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "release-output-check-flow-1",
-      "title": "出力・リリース確認フロー サンプル 1",
+      "title": "リリース成果物確認フロー サンプル1",
       "status": "ready",
       "name": "release-output-check-flow",
       "version": "0.2.0",

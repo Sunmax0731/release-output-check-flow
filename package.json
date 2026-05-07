@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "description": "リリース成果物、リリースノート、検証証跡、公開前チェックを1つの確認レポートへまとめる。",
+  "description": "リリース成果物、リリースノート、検証証跡、公開前チェックをひとつの確認レポートにまとめる。",
   "scripts": {
     "test": "node --test tests/*.test.mjs && node tools/qcds-evaluate.mjs",
     "validate": "npm test",
@@ -12,7 +12,9 @@
   "keywords": [
     "projectmanagement",
     "release",
-    "mvp"
+    "mvp",
+    "qcds",
+    "pre-release"
   ],
   "license": "MIT"
 }
