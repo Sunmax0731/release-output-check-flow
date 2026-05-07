@@ -191,7 +191,7 @@
           "description": "docs ZIPが生成済みである",
           "kind": "zip",
           "pass": true,
-          "detail": "release-output-check-flow-docs.zip 15251 bytes"
+          "detail": "release-output-check-flow-docs.zip exists and exceeds minimum size"
         }
       ]
     },
