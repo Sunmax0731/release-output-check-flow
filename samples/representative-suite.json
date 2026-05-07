@@ -21,12 +21,12 @@
           {
             "id": "release-output-check-flow-happy",
             "title": "リリース成果物確認フロー happy",
-            "status": "ready",
             "name": "release-output-check-flow",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "ready"
           }
         ]
       },
@@ -44,11 +44,11 @@
           {
             "id": "release-output-check-flow-missing-required",
             "title": "リリース成果物確認フロー missing-required",
-            "status": "ready",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "ready"
           }
         ]
       },
@@ -66,12 +66,12 @@
           {
             "id": "release-output-check-flow-blocked",
             "title": "リリース成果物確認フロー blocked",
-            "status": "blocked",
             "name": "release-output-check-flow",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "blocked"
           }
         ]
       },
@@ -89,31 +89,31 @@
           {
             "id": "release-output-check-flow-happy",
             "title": "リリース成果物確認フロー happy",
-            "status": "ready",
             "name": "release-output-check-flow",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "ready"
           },
           {
             "id": "release-output-check-flow-missing-required",
             "title": "リリース成果物確認フロー missing-required",
-            "status": "ready",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "ready"
           },
           {
             "id": "release-output-check-flow-blocked",
             "title": "リリース成果物確認フロー blocked",
-            "status": "blocked",
             "name": "release-output-check-flow",
             "version": "0.2.0",
             "artifactPath": "dist/product.zip",
             "releaseNotes": "docs/release-checklist.md",
-            "testEvidence": "docs/manual-test.md"
+            "testEvidence": "docs/manual-test.md",
+            "status": "blocked"
           }
         ]
       },
