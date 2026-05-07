@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "id": "release-1",
+      "title": "出力・リリース確認フロー サンプル 1",
+      "name": "release-output-check-flow",
+      "version": "0.1.0",
+      "artifactPath": "dist/sample-artifact.zip",
+      "releaseNotes": "docs/release-notes.md",
+      "testEvidence": "dist/test-report.txt"
+    },
+    {
+      "id": "release-missing-required",
+      "title": "必須項目不足サンプル",
+      "version": "0.1.0",
+      "artifactPath": "dist/sample-artifact.zip",
+      "releaseNotes": "docs/release-notes.md",
+      "testEvidence": "dist/test-report.txt"
+    }
+  ]
+}
