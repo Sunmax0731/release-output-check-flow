@@ -1,21 +1,23 @@
 {
   "items": [
     {
-      "id": "release-1",
+      "id": "release-output-check-flow-1",
       "title": "出力・リリース確認フロー サンプル 1",
+      "status": "ready",
       "name": "release-output-check-flow",
-      "version": "0.1.0",
-      "artifactPath": "dist/sample-artifact.zip",
-      "releaseNotes": "docs/release-notes.md",
-      "testEvidence": "dist/test-report.txt"
+      "version": "0.2.0",
+      "artifactPath": "dist/product.zip",
+      "releaseNotes": "docs/release-checklist.md",
+      "testEvidence": "docs/manual-test.md"
     },
     {
-      "id": "release-missing-required",
+      "id": "release-output-check-flow-missing-required",
       "title": "必須項目不足サンプル",
-      "version": "0.1.0",
-      "artifactPath": "dist/sample-artifact.zip",
-      "releaseNotes": "docs/release-notes.md",
-      "testEvidence": "dist/test-report.txt"
+      "status": "ready",
+      "version": "0.2.0",
+      "artifactPath": "dist/product.zip",
+      "releaseNotes": "docs/release-checklist.md",
+      "testEvidence": "docs/manual-test.md"
     }
   ]
 }
