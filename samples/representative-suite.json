@@ -1,0 +1,127 @@
+{
+  "product": "release-output-check-flow",
+  "title": "リリース成果物確認フロー",
+  "benchmarkRepos": [
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ],
+  "requiredFields": [
+    "name",
+    "version",
+    "artifactPath",
+    "releaseNotes",
+    "testEvidence"
+  ],
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "purpose": "リリース前の成果物、ノート、検証証跡、公開判断の正常入力を確認する",
+      "input": {
+        "items": [
+          {
+            "id": "release-output-check-flow-happy",
+            "title": "リリース成果物確認フロー happy",
+            "status": "ready",
+            "name": "release-output-check-flow",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          }
+        ]
+      },
+      "expected": {
+        "result": "passed",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "purpose": "必須項目不足をerrorとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "release-output-check-flow-missing-required",
+            "title": "リリース成果物確認フロー missing-required",
+            "status": "ready",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "blocked-status",
+      "purpose": "blocked状態をwarningとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "release-output-check-flow-blocked",
+            "title": "リリース成果物確認フロー blocked",
+            "status": "blocked",
+            "name": "release-output-check-flow",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          }
+        ]
+      },
+      "expected": {
+        "result": "warning",
+        "errors": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "purpose": "正常、必須不足、警告を同一バッチで集計する",
+      "input": {
+        "items": [
+          {
+            "id": "release-output-check-flow-happy",
+            "title": "リリース成果物確認フロー happy",
+            "status": "ready",
+            "name": "release-output-check-flow",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          },
+          {
+            "id": "release-output-check-flow-missing-required",
+            "title": "リリース成果物確認フロー missing-required",
+            "status": "ready",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          },
+          {
+            "id": "release-output-check-flow-blocked",
+            "title": "リリース成果物確認フロー blocked",
+            "status": "blocked",
+            "name": "release-output-check-flow",
+            "version": "0.2.0",
+            "artifactPath": "dist/product.zip",
+            "releaseNotes": "docs/release-checklist.md",
+            "testEvidence": "docs/manual-test.md"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}
