@@ -1,0 +1,32 @@
+{
+  "product": "release-output-check-flow",
+  "repository": "Sunmax0731/release-output-check-flow",
+  "githubUrl": "https://github.com/Sunmax0731/release-output-check-flow",
+  "tag": "v0.1.0-alpha.1",
+  "releaseUrl": "https://github.com/Sunmax0731/release-output-check-flow/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "assets": [
+    "release-output-check-flow-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "cli-release-tool",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
+  },
+  "github": {
+    "repo": "Sunmax0731/release-output-check-flow",
+    "url": "https://github.com/Sunmax0731/release-output-check-flow",
+    "releaseUrl": "https://github.com/Sunmax0731/release-output-check-flow/releases/tag/v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false
+  }
+}
