@@ -51,8 +51,10 @@
     "ahead": 0,
     "behind": 0,
     "status": "",
-    "localCodex": [],
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
     "remoteCodex": [],
-    "clean": true
+    "clean": false
   }
 }
